@@ -1,0 +1,7 @@
+hote : nc -l [numéro de port]
+exterieur : nc [ip de l'hote] [numéro de port de l'hote]
+
+exemple :
+
+hote: nc -l 5000
+exterieur: nc 192.168.1.208 5000
