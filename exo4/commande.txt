@@ -1,0 +1,12 @@
+dans le sh = {
+#!/bin/sh
+
+fName="backup_`date | tr ' ' '_' | tr ':' '_'`"
+
+tar -c -f $fName ~/Pictures
+}
+
+dans le crontab = {
+30 7 * * * ~/script/bin/back.sh
+}
+
